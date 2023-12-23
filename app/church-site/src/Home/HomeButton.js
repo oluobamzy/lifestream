@@ -1,8 +1,9 @@
 import "./Home.css";
-const HomeButton = () => {
+const HomeButton = ({onClick}) => {
+
     return (
         <div>
-            <button>Join Us</button>
+            <button onClick={onClick}>Join Us</button>
         </div>
     );
 };

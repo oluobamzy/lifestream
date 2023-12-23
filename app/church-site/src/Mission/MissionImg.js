@@ -1,3 +1,4 @@
+import "./MissionImg.css";
 const MissionImg = () => {
   return (
     <div className="mission-img">
