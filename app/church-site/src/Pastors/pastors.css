@@ -1,0 +1,64 @@
+.pastors-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.pastors-card-overlay img {
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+}
+
+.pastors-card-overlay {
+  width: 30%;
+}
+
+.pastors-card-bg {
+  width: 70%;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.pastors-card-bg h3,
+.pastors-card-bg p {
+  color: black;
+}
+
+/* .pastorsCard {
+  width: 100vw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+} */
+
+.pastorsCard h1 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 40px;
+  padding: 30px;
+  color: black;
+  height: 10%;
+}
+
+.main-pastors-card {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap; /* Added flex-wrap property to allow cards to wrap to the next line */
+
+}
+.main-pastors-card ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+.main-pastors-card li {
+  width: 50%; 
+  list-style: none;
+
+}
+

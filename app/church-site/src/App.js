@@ -4,6 +4,7 @@ import SplashScreen from './Home/SplashScreen';
 import { useState } from 'react';
 import MissionImg from './Mission/MissionImg';
 import Services from './Services/Services';
+import PastorCard from './Pastors/PastorCard';
 
 function App() {
   const [showJoinUs, setShowJoinUs] = useState(false);
@@ -25,6 +26,29 @@ function App() {
     },
     // Add more objects as needed
   ];
+
+  const cardData2 = [
+    {
+      image:"https://th.bing.com/th/id/OIP.ZP-E8ZFH11wb1XSm0dn-5wHaJQ?rs=1&pid=ImgDetMain",
+      title:"Pastor's Name",
+      bio:"orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis."
+    },
+    {
+      image:"https://th.bing.com/th/id/OIP.ZP-E8ZFH11wb1XSm0dn-5wHaJQ?rs=1&pid=ImgDetMain",
+      title:"Pastor's name",
+      bio:"orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis."
+    },
+    {
+      image:"https://th.bing.com/th/id/OIP.ZP-E8ZFH11wb1XSm0dn-5wHaJQ?rs=1&pid=ImgDetMain",
+      title:"Pastor's name",
+      bio:"orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis."
+    },
+    {
+      image:"https://th.bing.com/th/id/OIP.ZP-E8ZFH11wb1XSm0dn-5wHaJQ?rs=1&pid=ImgDetMain",
+      title:"Pastor's name",
+      bio:"orem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis."
+    },
+  ];
   
   const handleJoinUs = () => {
     setShowJoinUs(true);
@@ -36,6 +60,7 @@ function App() {
         <SplashScreen onClick = {handleJoinUs}/>
         { showJoinUs && <MissionImg />}
         <Services cardData={cardData} />
+        <PastorCard cardData2={cardData2}/>
       </header>
     </div>
   );
